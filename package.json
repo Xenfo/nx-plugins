@@ -40,7 +40,7 @@
     "@nrwl/node": "12.3.4",
     "@nrwl/nx-cloud": "^12.1.2",
     "@nrwl/nx-plugin": "^12.3.4",
-    "@nrwl/tao": "12.3.4",
+    "@nrwl/tao": "12.3.5",
     "@nrwl/workspace": "12.3.4",
     "@trivago/prettier-plugin-sort-imports": "^2.0.2",
     "@types/jest": "26.0.8",
