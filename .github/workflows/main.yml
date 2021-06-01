@@ -1,0 +1,69 @@
+name: CI/CD
+on:
+  pull_request:
+    branches:
+      - master
+  push:
+    branches:
+      - master
+
+env:
+  NX_BRANCH: ${{ github.event.number }}
+  NX_RUN_GROUP: ${{ github.run_id }}
+
+jobs:
+  lint:
+    name: Lint
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        node-version: [14.x]
+
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          ref: ${{ github.event.pull_request.head.ref }}
+          fetch-depth: 0
+
+      - name: Set up Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v1
+        with:
+          node-version: ${{ matrix.node-version }}
+
+      - name: Git Fetch
+        run: git fetch --no-tags --prune --depth=5 origin master
+
+      - name: Install Dependencies
+        run: yarn install --silent --frozen-lockfile
+
+      - name: Run Linter
+        run: yarn nx workspace-lint && yarn nx affected --target=lint --base=origin/master
+
+  test:
+    name: Tests
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        node-version: [14.x]
+
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          ref: ${{ github.event.pull_request.head.ref }}
+          fetch-depth: 0
+
+      - name: Set up Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v1
+        with:
+          node-version: ${{ matrix.node-version }}
+
+      - name: Git Fetch
+        run: git fetch --no-tags --prune --depth=5 origin master
+
+      - name: Install Dependencies
+        run: yarn install --silent --frozen-lockfile
+
+      - name: Run Tests
+        run: yarn nx affected --target=test --base=origin/master --codeCoverage --ci

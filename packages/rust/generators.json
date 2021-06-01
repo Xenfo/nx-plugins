@@ -3,10 +3,15 @@
   "name": "rust",
   "version": "0.0.1",
   "generators": {
-    "rust": {
-      "factory": "./src/generators/rust/generator",
-      "schema": "./src/generators/rust/schema.json",
-      "description": "rust generator"
+    "app": {
+      "factory": "./src/generators/app/generator",
+      "schema": "./src/generators/app/schema.json",
+      "description": "Rust app generator"
+    },
+    "lib": {
+      "factory": "./src/generators/lib/generator",
+      "schema": "./src/generators/lib/schema.json",
+      "description": "Rust lib generator"
     }
   }
 }

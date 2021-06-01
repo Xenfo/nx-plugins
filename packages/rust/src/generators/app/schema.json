@@ -1,13 +1,14 @@
 {
   "$schema": "http://json-schema.org/schema",
   "cli": "nx",
-  "id": "Rust",
-  "title": "",
+  "id": "@xenfo/nx-rust:app",
+  "title": "NX Rust Application Generator",
+  "description": "Generate a Rust project under the application directory.",
   "type": "object",
   "properties": {
     "name": {
       "type": "string",
-      "description": "",
+      "description": "The name assigned to the app",
       "$default": {
         "$source": "argv",
         "index": 0
@@ -23,6 +24,10 @@
       "type": "string",
       "description": "A directory where the project is placed",
       "alias": "d"
+    },
+    "dry": {
+      "type": "boolean",
+      "description": "Is this a dry run"
     }
   },
   "required": ["name"]

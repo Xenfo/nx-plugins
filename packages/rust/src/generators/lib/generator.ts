@@ -1,16 +1,15 @@
 import {
   addProjectConfiguration,
   formatFiles,
-  generateFiles,
   getWorkspaceLayout,
   names,
-  offsetFromRoot,
-  Tree,
+  Tree
 } from '@nrwl/devkit';
-import * as path from 'path';
+
+import { factory, mockFactory, RustClient } from '../../lib';
 import { RustGeneratorSchema } from './schema';
 
-interface NormalizedSchema extends RustGeneratorSchema {
+export interface NormalizedSchema extends RustGeneratorSchema {
   projectName: string;
   projectRoot: string;
   projectDirectory: string;
@@ -36,23 +35,8 @@ function normalizeOptions(
     projectName,
     projectRoot,
     projectDirectory,
-    parsedTags,
+    parsedTags
   };
-}
-
-function addFiles(host: Tree, options: NormalizedSchema) {
-  const templateOptions = {
-    ...options,
-    ...names(options.name),
-    offsetFromRoot: offsetFromRoot(options.projectRoot),
-    template: '',
-  };
-  generateFiles(
-    host,
-    path.join(__dirname, 'files'),
-    options.projectRoot,
-    templateOptions
-  );
 }
 
 export default async function (host: Tree, options: RustGeneratorSchema) {
@@ -63,11 +47,11 @@ export default async function (host: Tree, options: RustGeneratorSchema) {
     sourceRoot: `${normalizedOptions.projectRoot}/src`,
     targets: {
       build: {
-        executor: '@nx-plugins/rust:build',
-      },
+        executor: '@nx-plugins/rust:build'
+      }
     },
-    tags: normalizedOptions.parsedTags,
+    tags: normalizedOptions.parsedTags
   });
-  addFiles(host, normalizedOptions);
+  new RustClient(options.dry ? mockFactory() : factory()).newLib(normalizedOptions);
   await formatFiles(host);
 }

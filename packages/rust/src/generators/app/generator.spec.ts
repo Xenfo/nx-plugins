@@ -6,7 +6,7 @@ import { RustGeneratorSchema } from './schema';
 
 describe('rust generator', () => {
   let appTree: Tree;
-  const options: RustGeneratorSchema = { name: 'test' };
+  const options: RustGeneratorSchema = { name: 'jest', dry: true };
 
   beforeEach(() => {
     appTree = createTreeWithEmptyWorkspace();
@@ -14,7 +14,7 @@ describe('rust generator', () => {
 
   it('should run successfully', async () => {
     await generator(appTree, options);
-    const config = readProjectConfiguration(appTree, 'test');
+    const config = readProjectConfiguration(appTree, 'jest');
     expect(config).toBeDefined();
   });
 });

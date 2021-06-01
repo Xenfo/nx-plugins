@@ -1,5 +1,5 @@
 {
-  "npmScope": "nx-plugins",
+  "npmScope": "xenfo",
   "affected": {
     "defaultBase": "master"
   },
@@ -12,9 +12,17 @@
   },
   "tasksRunnerOptions": {
     "default": {
-      "runner": "@nrwl/workspace/tasks-runners/default",
+      "runner": "@nrwl/nx-cloud",
       "options": {
-        "cacheableOperations": ["build", "lint", "test", "e2e"]
+        "cacheableOperations": [
+          "build",
+          "lint",
+          "test",
+          "e2e"
+        ],
+        "accessToken": "MjExYTBlMWEtOGNkYy00MjI5LWIzZDAtYjQ2ZjJjZTFhYWY0fHJlYWQtd3JpdGU=",
+        "canTrackAnalytics": false,
+        "showUsageWarnings": true
       }
     }
   },
@@ -24,7 +32,9 @@
     },
     "rust-e2e": {
       "tags": [],
-      "implicitDependencies": ["rust"]
+      "implicitDependencies": [
+        "rust"
+      ]
     }
   },
   "workspaceLayout": {
