@@ -45,7 +45,7 @@
     "@trivago/prettier-plugin-sort-imports": "^2.0.2",
     "@types/jest": "26.0.24",
     "@types/node": "16.3.3",
-    "@typescript-eslint/eslint-plugin": "4.28.3",
+    "@typescript-eslint/eslint-plugin": "4.28.4",
     "@typescript-eslint/parser": "4.28.4",
     "commitizen": "^4.2.4",
     "cz-conventional-changelog": "^3.3.0",
