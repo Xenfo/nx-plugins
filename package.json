@@ -32,7 +32,7 @@
     "tslib": "^2.0.0"
   },
   "devDependencies": {
-    "@nrwl/cli": "12.5.8",
+    "@nrwl/cli": "12.6.0",
     "@nrwl/devkit": "12.5.8",
     "@nrwl/eslint-plugin-nx": "12.5.8",
     "@nrwl/jest": "12.5.8",
