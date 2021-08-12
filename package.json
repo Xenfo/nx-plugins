@@ -34,7 +34,7 @@
   "devDependencies": {
     "@nrwl/cli": "12.7.0",
     "@nrwl/devkit": "12.7.1",
-    "@nrwl/eslint-plugin-nx": "12.6.3",
+    "@nrwl/eslint-plugin-nx": "12.7.1",
     "@nrwl/jest": "12.7.1",
     "@nrwl/linter": "12.7.1",
     "@nrwl/node": "12.7.0",
