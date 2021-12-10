@@ -14,31 +14,18 @@
     "default": {
       "runner": "@nrwl/nx-cloud",
       "options": {
-        "cacheableOperations": [
-          "build",
-          "lint",
-          "test",
-          "e2e"
-        ],
+        "cacheableOperations": ["build", "lint", "test", "e2e"],
         "accessToken": "MjExYTBlMWEtOGNkYy00MjI5LWIzZDAtYjQ2ZjJjZTFhYWY0fHJlYWQtd3JpdGU=",
         "canTrackAnalytics": false,
         "showUsageWarnings": true
       }
     }
   },
-  "projects": {
-    "rust": {
-      "tags": []
-    },
-    "rust-e2e": {
-      "tags": [],
-      "implicitDependencies": [
-        "rust"
-      ]
-    }
-  },
   "workspaceLayout": {
     "appsDir": "e2e",
     "libsDir": "packages"
+  },
+  "cli": {
+    "defaultCollection": "@nrwl/workspace"
   }
 }
