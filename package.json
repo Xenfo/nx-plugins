@@ -42,7 +42,7 @@
     "@nrwl/nx-plugin": "^12.3.5",
     "@nrwl/tao": "12.3.6",
     "@nrwl/workspace": "12.3.6",
-    "@trivago/prettier-plugin-sort-imports": "^2.0.2",
+    "@trivago/prettier-plugin-sort-imports": "^3.1.1",
     "@types/jest": "26.0.23",
     "@types/node": "15.9.0",
     "@typescript-eslint/eslint-plugin": "4.26.0",
