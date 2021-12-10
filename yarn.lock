@@ -830,7 +830,7 @@
     "@nodelib/fs.scandir" "2.1.5"
     fastq "^1.6.0"
 
-"@nrwl/cli@*", "@nrwl/cli@13.3.0":
+"@nrwl/cli@*":
   version "13.3.0"
   resolved "https://registry.yarnpkg.com/@nrwl/cli/-/cli-13.3.0.tgz#dd26c0cedbe2fc652879b3cd06e6ba07069239f1"
   integrity sha512-PiK4w1CCLQQ+KIP7jWZxhcUIZqLK5qajsyg6TjZvnsIWePm50pVJxQQZgbrK6M2ZxwmifqIGX1kcDPfd+55V4g==
