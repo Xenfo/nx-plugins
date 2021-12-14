@@ -39,7 +39,7 @@
     "@nrwl/linter": "13.3.1",
     "@nrwl/node": "13.3.1",
     "@nrwl/nx-cloud": "^13.0.0",
-    "@nrwl/nx-plugin": "^13.3.1",
+    "@nrwl/nx-plugin": "^13.3.2",
     "@nrwl/tao": "13.3.1",
     "@nrwl/workspace": "13.3.1",
     "@trivago/prettier-plugin-sort-imports": "^3.0.0",
