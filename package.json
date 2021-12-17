@@ -41,7 +41,7 @@
     "@nrwl/nx-cloud": "^13.0.0",
     "@nrwl/nx-plugin": "^13.3.8",
     "@nrwl/tao": "13.3.6",
-    "@nrwl/workspace": "13.3.6",
+    "@nrwl/workspace": "13.3.8",
     "@trivago/prettier-plugin-sort-imports": "^3.0.0",
     "@types/jest": "27.0.3",
     "@typescript-eslint/eslint-plugin": "5.7.0",
