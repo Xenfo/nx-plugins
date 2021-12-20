@@ -835,6 +835,18 @@
     yargs "15.4.1"
     yargs-parser "20.0.0"
 
+"@nrwl/devkit@13.3.11":
+  version "13.3.11"
+  resolved "https://registry.yarnpkg.com/@nrwl/devkit/-/devkit-13.3.11.tgz#39ccc066aa0cd1b95e298e9ae91f8d295c82a2be"
+  integrity sha512-SSVUGUP5z6uiO5HN2EyrhaI0KVUXbCeAvOnICW7oDFOra+dbcbQZoN1JfK9DD51ND5J0vz/ypEljZSqudXquzw==
+  dependencies:
+    "@nrwl/tao" "13.3.11"
+    ejs "^3.1.5"
+    ignore "^5.0.4"
+    rxjs "^6.5.4"
+    semver "7.3.4"
+    tslib "^2.3.0"
+
 "@nrwl/devkit@13.3.8":
   version "13.3.8"
   resolved "https://registry.yarnpkg.com/@nrwl/devkit/-/devkit-13.3.8.tgz#f2cead53c729b880a1764347778771acd813346b"
