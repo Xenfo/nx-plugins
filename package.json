@@ -32,14 +32,14 @@
     "tslib": "^2.0.0"
   },
   "devDependencies": {
-    "@nrwl/cli": "13.3.8",
+    "@nrwl/cli": "13.3.9",
     "@nrwl/devkit": "13.3.8",
-    "@nrwl/eslint-plugin-nx": "13.3.8",
+    "@nrwl/eslint-plugin-nx": "13.3.9",
     "@nrwl/jest": "13.3.8",
     "@nrwl/linter": "13.3.8",
     "@nrwl/node": "13.3.8",
     "@nrwl/nx-cloud": "^13.0.0",
-    "@nrwl/nx-plugin": "^13.3.8",
+    "@nrwl/nx-plugin": "^13.3.9",
     "@nrwl/tao": "13.3.8",
     "@nrwl/workspace": "13.3.8",
     "@trivago/prettier-plugin-sort-imports": "^3.0.0",
