@@ -950,6 +950,35 @@
     webpack-merge "^5.8.0"
     webpack-node-externals "^3.0.0"
 
+"@nrwl/node@13.3.12":
+  version "13.3.12"
+  resolved "https://registry.yarnpkg.com/@nrwl/node/-/node-13.3.12.tgz#4102d965752174e5940d2255a0e9d9ebd6870815"
+  integrity sha512-W/RUXp8b2mdzSqzHRgd6tcRX7a+DPsf2CB+XsfsSdMbV/Z4+f4oWSM8Ldx8QrlB8mPdQF9xgJMqCAKHgpv4wtg==
+  dependencies:
+    "@nrwl/devkit" "13.3.12"
+    "@nrwl/jest" "13.3.12"
+    "@nrwl/linter" "13.3.12"
+    "@nrwl/workspace" "13.3.12"
+    chalk "4.1.0"
+    copy-webpack-plugin "^9.0.1"
+    enhanced-resolve "^5.8.3"
+    fork-ts-checker-webpack-plugin "6.2.10"
+    fs-extra "^9.1.0"
+    glob "7.1.4"
+    license-webpack-plugin "2.3.15"
+    rxjs "^6.5.4"
+    rxjs-for-await "0.0.2"
+    source-map-support "0.5.19"
+    tree-kill "1.2.2"
+    ts-loader "^9.2.6"
+    ts-node "~9.1.1"
+    tsconfig-paths "^3.9.0"
+    tsconfig-paths-webpack-plugin "3.4.1"
+    tslib "^2.3.0"
+    webpack "^5.58.1"
+    webpack-merge "^5.8.0"
+    webpack-node-externals "^3.0.0"
+
 "@nrwl/nx-cloud@^13.0.0":
   version "13.0.0"
   resolved "https://registry.yarnpkg.com/@nrwl/nx-cloud/-/nx-cloud-13.0.0.tgz#24d01bc8c20ee6eeb66fd6b0499d3396cc5e5993"
@@ -962,15 +991,15 @@
     strip-json-comments "^3.1.1"
     tar "6.1.11"
 
-"@nrwl/nx-plugin@^13.3.11":
-  version "13.3.11"
-  resolved "https://registry.yarnpkg.com/@nrwl/nx-plugin/-/nx-plugin-13.3.11.tgz#1b5d0b02873c3a10d95e34612e160332bdf297af"
-  integrity sha512-wJkdpPOcTPHCWhFk579Lp+Nuh5AJDznVOBr5I9+CQABWAwRoYH4TCv3p1Xdj5+FHDeHdJv2sBxeuNdyOhnqk5g==
+"@nrwl/nx-plugin@^13.3.12":
+  version "13.3.12"
+  resolved "https://registry.yarnpkg.com/@nrwl/nx-plugin/-/nx-plugin-13.3.12.tgz#d79087c578966898f92a66e34ac7d8df0501b0d3"
+  integrity sha512-ztj8dJ+Xu1S4cPIRulosW14rttmT++KNc6Vly4HXc9j0ETkt47bcMn1dAXFxhRqLp71yttndsMR3rBe9iIZBkQ==
   dependencies:
-    "@nrwl/devkit" "13.3.11"
-    "@nrwl/jest" "13.3.11"
-    "@nrwl/linter" "13.3.11"
-    "@nrwl/node" "13.3.11"
+    "@nrwl/devkit" "13.3.12"
+    "@nrwl/jest" "13.3.12"
+    "@nrwl/linter" "13.3.12"
+    "@nrwl/node" "13.3.12"
     fs-extra "^9.1.0"
     rxjs "^6.5.4"
     tslib "^2.3.0"
