@@ -991,15 +991,15 @@
     strip-json-comments "^3.1.1"
     tar "6.1.11"
 
-"@nrwl/nx-plugin@^13.3.12":
-  version "13.3.12"
-  resolved "https://registry.yarnpkg.com/@nrwl/nx-plugin/-/nx-plugin-13.3.12.tgz#d79087c578966898f92a66e34ac7d8df0501b0d3"
-  integrity sha512-ztj8dJ+Xu1S4cPIRulosW14rttmT++KNc6Vly4HXc9j0ETkt47bcMn1dAXFxhRqLp71yttndsMR3rBe9iIZBkQ==
+"@nrwl/nx-plugin@^13.4.0":
+  version "13.4.0"
+  resolved "https://registry.yarnpkg.com/@nrwl/nx-plugin/-/nx-plugin-13.4.0.tgz#7c8d4160de75b03d6e824ea1fa5fb5d7c33073ff"
+  integrity sha512-IdTiEkk2mGKc+KoiYmYw0tLQxv2vhirmUXcwMEKMWEgEWT/cAhd9MDaOqCLJNwpZY3nhXCxHUz1URVb39OQaqg==
   dependencies:
-    "@nrwl/devkit" "13.3.12"
-    "@nrwl/jest" "13.3.12"
-    "@nrwl/linter" "13.3.12"
-    "@nrwl/node" "13.3.12"
+    "@nrwl/devkit" "13.4.0"
+    "@nrwl/jest" "13.4.0"
+    "@nrwl/linter" "13.4.0"
+    "@nrwl/node" "13.4.0"
     fs-extra "^9.1.0"
     rxjs "^6.5.4"
     tslib "^2.3.0"
