@@ -907,6 +907,20 @@
     tmp "~0.2.1"
     tslib "^2.3.0"
 
+"@nrwl/linter@13.4.0":
+  version "13.4.0"
+  resolved "https://registry.yarnpkg.com/@nrwl/linter/-/linter-13.4.0.tgz#2162c3ef1de570445741db2d4855e267affe64b2"
+  integrity sha512-RHR6PyrlQ8IKXc0JdJIqWjshI3zQzyT5ni4LafJe8+0FoSVh6Cy+pMYOUVBF5hSGzypyWf3Nfjzfr/jKQ8uAIw==
+  dependencies:
+    "@nrwl/devkit" "13.4.0"
+    "@nrwl/jest" "13.4.0"
+    "@phenomnomnominal/tsquery" "4.1.1"
+    eslint "8.2.0"
+    glob "7.1.4"
+    minimatch "3.0.4"
+    tmp "~0.2.1"
+    tslib "^2.3.0"
+
 "@nrwl/node@13.3.12":
   version "13.3.12"
   resolved "https://registry.yarnpkg.com/@nrwl/node/-/node-13.3.12.tgz#4102d965752174e5940d2255a0e9d9ebd6870815"
@@ -1009,6 +1023,37 @@
     "@nrwl/devkit" "13.3.12"
     "@nrwl/jest" "13.3.12"
     "@nrwl/linter" "13.3.12"
+    "@parcel/watcher" "2.0.4"
+    chalk "4.1.0"
+    chokidar "^3.5.1"
+    cosmiconfig "^4.0.0"
+    dotenv "~10.0.0"
+    enquirer "~2.3.6"
+    flat "^5.0.2"
+    fs-extra "^9.1.0"
+    glob "7.1.4"
+    ignore "^5.0.4"
+    minimatch "3.0.4"
+    npm-run-all "^4.1.5"
+    npm-run-path "^4.0.1"
+    open "^7.4.2"
+    rxjs "^6.5.4"
+    semver "7.3.4"
+    strip-ansi "6.0.0"
+    tmp "~0.2.1"
+    tslib "^2.3.0"
+    yargs "15.4.1"
+    yargs-parser "20.0.0"
+
+"@nrwl/workspace@13.4.0":
+  version "13.4.0"
+  resolved "https://registry.yarnpkg.com/@nrwl/workspace/-/workspace-13.4.0.tgz#7cf929d0c290586eb98a54d6e25b988ebc2e9699"
+  integrity sha512-MaYLXPodXgBGFaED+LhpHzfmOrTMXNabEpmgP4g5d1mAlvBgYjDiEnkP99Uhk23uKKbHKlIRpZTMZwQ7JCoVpg==
+  dependencies:
+    "@nrwl/cli" "13.4.0"
+    "@nrwl/devkit" "13.4.0"
+    "@nrwl/jest" "13.4.0"
+    "@nrwl/linter" "13.4.0"
     "@parcel/watcher" "2.0.4"
     chalk "4.1.0"
     chokidar "^3.5.1"
